@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initail-scale=1.0">
+        <title>Link & Navigation</title>
+        <link rel="icon" href="/images/favicon-32x32.png">
+        
+        <!--makes the Scrolling Smooth, (on clicking anchor, last topic)-->
+        <style>
+            html{
+                scroll-behavior:smooth;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1 style="color: chocolate; " id="top">Links & Navigation</h1>
+        <hr><!---->
+
+
+
+        <h1 style="color: darkseagreen;">Links</h1>
+
+        <!--Links, HTML links are hyperlinks, you can click and jump to another document.-->
+        <!--Note: A lik doesn't have to be text. A link can be an image or any other HTML elements.-->
+        
+        <!--<a>, defines a hyperlink.--><!--Inline element-->
+        <p>a(href="url"): Text......</p>
+        <a href="https://www.youtube.com/">Youtube</a> <br> 
+        
+        <p>Links can be styled with CSS</p>
+        <a href="https://www.youtube.com/" style="font-family: fantasy; color: red;" >YouTube</a> 
+
+        <p>Link <mark>target</mark>, By default the linked page will be displayed in the current browser window. 
+            To change this, you must specify another target for the link</p>
+
+        <p>target=<mark>"_self"</mark>: Opens the Document in the same window/tab/frame as it was clicked(<mark>default behaviour</mark>,
+             as above two two links without target specified) (default, rarely written)</p>
+        <!--Even if you don't write anything(target), it behaves like _self-->
+        <a href="https://www.youtube.com/" target="_self">Youtube</a><br>  
+        
+        <p>target="_parent":Opens the link in the parent frame(the frame that conatins the current frame) (Used almost never) </p>
+        <a href="https://www.youtube.com/" target="_parent">Youtube</a> <br> 
+        
+        <!--Difference between _self and _parent is noticed when using frames or iframes-->
+
+        <!--***-->
+        <!--_blank used when: Opening external websites, keeping user on your site showing another page.-->
+        <p><mark>target="_blank: Opens the document in a new window or tab (used a lot)</mark></p>
+        <a href="https://www.youtube.com/" target="_blank">YOUTUBE</a>
+        
+        <p> target="_top": Opens link in the full window, breaking out of all frames/iframes(used almost never)</p>
+        <a href="https://www.youtube.com/" target="_top">YouTube</a>
+
+        <!-- _self:   Opens inside iframe 
+             _parent: Opens in parent page
+             _top:    Opens in full browser window(remvoes iframe completely)
+             **_blank:  Opens in new tab-->
+        <hr><!---->     
+
+
+
+        <!-- Relative URL and Absolute URL-->
+        <p><b>Absolute URL</b>: a full web address/external links</p>
+        <a href="https://www.youtube.com/">YouTube</a>  
+        
+        <p><b>Relative URL:</b> a link to a page within the same website, usually starts with foldername, /, ../ etc</p>
+        <a href="/A2_textContents&Lists.html">Text and contents</a>
+        <hr><!---->
+        
+
+
+        <h2 style="color: dodgerblue;">Image as a Link</h2>
+
+        <!--To use image as a link, just put the <img> tag inside the <a> tag-->
+        <p>Put &lt;img&gt; tag inside &lt;a&gt; tag</p>
+        <a href="https://www.youtube.com/watch?v=z3U0udLH974" target="_blank"><img src="/images/images.jpg"></a>
+        <hr> <!---->
+
+
+
+        <h1 style="color: green;">Link to an email address</h1>
+        
+        <h2 style="color:aqua;">mailto:</h2>
+        <p>Use mailto: inside the href attribute to create a link that opens the user's email program.</p>
+        <p>example: href="mailto:abc@mail.com"</p>
+        <a href="mailto:gautamkumargk08@gmail.com">Send email</a>
+
+        <p><ins>mailto: vs no mailto(normal href)</ins></p>
+        <pre>mailto: Opens user's default email app(gmail,Outlook,etc.)
+        Automatically fills: To:abc@mail.com</pre>
+
+        <pre>Normal href= Opens a website, not directly coposing email,
+             User has to manually : Click compose
+                                    Enter email 
+                                    Write message
+        </pre>
+        <!--mailto: does not always work smoothly, Not ideal for Professional sites-->
+
+        <p>Normal href for mail</p>
+        <a href="gautamkumargk08@gmail.com">Send mail</a>
+        <hr><!---->
+
+
+
+        <h1 style="color: cadetblue;">tel: </h1>
+        
+        <p>tel: used to make direct phone calls directly.</p>
+        <p>example: href="tel:+919876543210"</p>
+        <a href="tel:112">Call Emergency Helpline</a>
+
+        <!--On Mobile: Opens dialer with number filled, user can call
+            On PC :    may ask to open an app or Do nothing-->
+        <hr><!---->
+ 
+
+
+        <h1 style="color: deepskyblue;">Link Title </h1>
+        <p>The title attribute specifies extra info whem mouse moves over the element.</p>
+        <a href="https://youtu.be/8ScAnaU0FFE?si=ln_3QbcAn-oQh8fX" traget="_blank" title="is somethings here">Click Here</a>
+        <hr><!---->
+
+
+
+        <h1 style="color: darkgray;">Button as a link: onclick="../"</h1>
+        <p>To use an HTML button as a link, you have to add some JavaScript code.</p>
+        <p>JavaScript allows you to specify what happens at certain events, such as a click of a button</p>
+
+        <button onclick="document.location='default.asp'">HTML Tutorial</button>
+        <hr><!---->
+
+
+
+
+        <!--Linking to sections on same page-->
+        <h1 style="color: hotpink;">Page Anchoring</h1>
+        <p>Give an element an id: eg- id="xyz"</p>
+        <p>link it using #id: href="#xyz"</p>
+        <!--id should be unique and No spaces-->
+
+        <h4>Move to <a href="#top" title="Go to begining of the page">Top</a></h4>
+        <hr><!---->
+
+
+    </body>
+</html>
