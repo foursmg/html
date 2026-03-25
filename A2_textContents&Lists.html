@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Texts & Contents</title>
+        <link rel="icon" href="/images/favicon-32x32.png">
+
+    </head>
+    <body>
+
+        <!-- HTML Elements: An HTML element is defined by a start tag, some content, and an end tag.
+         The HTML element is everything from the start tag to the end tag:
+         <tagname>Content goes here...</tagname>
+        -->
+        <!-- HTML Attributes: All HTML elements can have attributes
+                              Attributes provide additional information about elements
+                              Attributes are always specified in the start tag
+                              Attributes usually come in name/value pairs like: name="value"
+                    example:: <a href="https://www.youtube.com">Visit YouTube</a>
+                    The <a> tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to
+        -->   
+
+        <h1>Text & Content</h1>
+        
+        <!--<hr>, Horizontal rule, used to separate content in html page-->
+        <hr>
+
+        <h1 style="color: cadetblue;">Heading and Para</h1>
+        <h1>h1: Heading 1</h1>
+        <h2>h2: Heading 2</h2>
+        <h3>h3: Heading 3</h3>
+        <h4>h4: Heading 4</h4>
+        <h5>h5: Heading 5</h5>
+        <h6>h6: Heading 6</h6>
+
+        <p>Paragraph:</p>
+        <p>p: This line is paragraph</p>
+        <p>para containing multiple
+            line are ignore by the browser
+            and shows in line
+        </p>
+
+        <!--<br>, line break, if you want a line break(a new line) without starting a new Paragraph-->
+        <p>This para has<br>Line Break</p>
+
+        <hr>
+        <!--<pre>,The text inside a <pre> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks-->
+        <h1 style="color: brown;">Preformetted text: </h1>
+        <p>pre: </p>
+        <pre>
+            Once I saw a little bird
+            come hop,hop,hop,
+            I cried,"Littile bird,
+            will you stop,stop,stop?"
+            I was going to the window
+            To say,"How do you do?"
+            But he shook his little tail
+            and away he flew.
+        </pre>   
+
+        <!--<code>, inline piecies of code, tells browser:"This is code,not a normal text."-->
+        <p>code:  </p>
+        <p> <code>System.out.print("hello"); (inline code)</code></p>
+        <pre><code> <code>
+            (Block code, multiline code)
+            public class A1_helloWorld{
+        public static void main(String[] args){
+        System.out.println("Hello World!!!!");
+        //use sout for quick print function(type sout in empty line/newline- hit enter)
+        System.out.print("hello");
+        System.out.println("World");
+        }
+        }</code></code></pre>     
+
+
+        <hr>
+
+        <!--Formatting Elements-->
+        <!--<i>, <strong>, <em> etc: these are inline element
+                                    they Do not start on a new line
+                                    only take as much width as needed
+                                    Stay within the same line as surrounding text-->
+        <h1 style="color: crimson;">Formatting elements</h1>
+        <b>b: bold text</b>
+        <br>
+        <strong>strong: Strong text</strong>
+        <br>
+        <i>i: Italic text</i>
+        <br>
+        <em>em: Emphasized text</em>
+        <br>
+        <mark>mark: Marked text</mark>
+        <br>
+        <small>small: Smaller text</small>
+        <br>
+        <del>del: Deleted text</del>
+        <br>
+        <ins>ins: Inserted text</ins>
+        <br>
+        <p>abbr(title): <abbr title="World Wide Web">www</abbr> is a global information system of interconnected public webpages and resources,
+            It operates on top of the internet, allowing users to access, browse, and share content via browsers using HTTP. It is distinct from the internet itself.</p>
+        <p>sub<sub>subscript</sub></p>
+        <p>sup<sup>SUPERSCRIPT</sup></p>
+
+
+
+        <hr>
+        <p>sup: superScript</p>
+        <p>This is normal para text<sup>this is superScript</sup></p>
+        <p>(a+b)<sup>2</sup> = a<sup>2</sup>+b<sup>2</sup>+2ab</p>
+        <p>sub: Subscript</p>
+        <p>This is normal para text<sub>this is subsScript</sub></p>
+
+
+
+
+        <hr>
+        <!--Quotation and Citation-->
+        <!--<blockquote> element defines a section that is quoted from another source-->
+        <h1 style="color: dodgerblue;">Quotation & Citation</h1>
+        <p>blockquote: A quote from Chernobyl:</p>
+        <blockquote cite="https://www.goodreads.com/author/quotes/2192.Aristotle">What is the cost of lies? It's not that we'll mistake them for the truth. The real danger is that if we hear enough lies, then we no longer recognize the truth at all.</blockquote>
+        <!--<cite>, here site is an attribute-->
+        <!--        it does not display anything visually by default in browser-->
+        <!--        it simply provides metadata about where the quote came from -->
+        <!--        useful for SEO, accessibility, and semantic correctness-->                    
+
+        <p>q: for Short Quotations(Browsers normally insert quotation marks around the quotation)</p>
+        <q>I've Woken Up And I No Longer Know If I'm A Person Who Dreamed He's A Butterfly Or If I'm A Butterfly Who's Dreaming It's A Person.</q>
+
+        <!--<cite>, here <cite> is a tag, used to markup the title of a work-->
+        <p>cite: mark up the title of work.</p>    
+        <p><cite>Discovery of India</cite> by Jawaharlal Nehru, written during imprisonment from 1942 to 1945 at Ahmednagar Fort.</p>
+        
+        <hr>
+
+        <!--Lists, to Group a set of related items in lists.-->
+        <!--<ul><li></li></uL> Unordered HTML list -->
+        <h1 style="color: deeppink;">List</h1>    
+        <p>ul-li-li-/li-/ul: Unordered list</p>
+        <ul>
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Coconut</li>
+        </ul>    
+
+        <p>ol-li-/li-/ol: Ordered List</p>
+        <ol>
+            <li>Milk</li>
+            <li>Tea</li>
+            <li>Butter</li>
+        </ol>
+
+        <p>ul(style="list-style-type: square;"): Unordered list with Square marker</p>
+        <ul style="list-style-type: square;">
+            <li>Cow</li>
+            <li>Goat</li>
+            <li>Buffalo</li>
+
+        </ul>
+
+        <p>ul(style="list-style-type: lower-greek;"): Unordered list with lower-greek marker</p>
+        <ul style="list-style-type:lower-greek;">
+            <li>Dog</li>
+            <li>Cat</li>
+            <li>Hamster</li>
+
+        </ul>
+
+        <p>ul(style="list-style-type: cirlce;"): Unordered list with circle marker</p>
+        <ul style="list-style-type:circle;">
+            <li>Cow</li>
+            <li>Goat</li>
+            <li>Buffalo</li>
+
+        </ul>
+
+
+         <p>ul(style="list-style-type: none;"): Unordered list with none marker</p>
+        <ul style="list-style-type:none">
+            <li>Cow</li>
+            <li>Goat</li>
+            <li>Buffalo</li>
+
+        </ul>
+
+        <p>Nested List</p>
+        <ul>
+            <li>Coffe</li>
+            <ul>
+                <li>Cold Coffee</li>
+                <li>Hot Coffee</li>
+                <li>Black Coffee</li>
+            </ul>
+            <li>Juice</li>
+            <ul>
+                <li>Orange Juice</li>
+                <li>Ananas Juice</li>
+            </ul>
+        </ul>
+
+        <p>Ordered list with type 1</p>
+        <p>ol(type="1")</p>
+        <ol type="1">
+            <li>Lion</li>
+            <li>Tiger</li>
+            <li>leopards</li>
+        </ol>
+        <p>Similar for (a A, i I) i and I for roman </p>
+
+        <p>Nested Ordered list</p>
+        <ol type="I">
+            <li>car</li>
+            <ol type="i">
+                <li>Four Wheels</li>
+                <li>Sun Roof</li>
+                <li>Compact</li>
+            </ol>
+            <li>Bike</li>
+            <ol>
+                <li>Adventure</li>
+                <li>Cruiser</li>
+                <li>Naked</li>
+            </ol>
+        </ol>
+
+
+        <p>dl-dt-dd: Descripton List, A description list is a list of terms, with a description of each term</p>
+        <dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+        </dl>
+
+        
+        <hr>
+        <!--Inline CSS, Inline CSS is a method of applying unique styles to a single HTML element using the style attribute directly within the element's opening tag.-->
+        <h1>style="..."</h1>
+        <h1 style="background-color: cadetblue;">Background colour:"background-color: cadetblue;"</h1>
+        <h1 style="color: blueviolet;">Text Color: "color: blue"</h1>
+        <h1 style="font-family: cursive;">Font Family:"font-family: cursive"</h1>
+        <h1 style="font-size: 90;">Font size: "font-size: 90"</h1>
+        <h1 style="font-size: 90%;">Font size: "font-size: 90%"</h1>
+        <h1 style="font-size: 90px;">Font size: "font-size: 90px"</h1>
+        <h1 style="text-align: center;">Text Alignment: "text-align: center;"</h1>
+        <h1 style="background-color: coral; color: darkslateblue; text-align: center; font-size: 290%; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">HTML Text and Contents</h1>
+
+     
+
+
+    </body>
+
+</html>
