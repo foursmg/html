@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initail-scale=1.0">
+        <title>Images & Media</title>
+        <link rel="icon" href="/images/favicon-32x32.png" type="image/png">
+    </head>
+    <body>
+
+        <h1 style="color: aqua;">Images & Media</h1>
+        <hr><!---->
+
+
+
+        <h1 style="color:rgb(185, 125, 53)">Images</h1>
+        
+        <!-- <img> tag is empty, it contains attribute only, and doesn't have a closing tag.-->
+        <!-- <img> has only two attribute: src-Specifies the path to the image.
+                                           alt-Specifies an alternate text for the image.--> 
+        
+        <p>&lt;img src="../"&gt;: for image </p>
+        <img src="/images/flower.jpeg">   
+        
+        <!--<img> tag with alternate attribute for alternate text-->
+        <p>&lt;img src="../" alt="alternate message"&gt;: Image tag with alternate attribute to specify an alternate text if image not displayed</p>
+        <img src="" alt="Picture of Flower">
+
+        <!--Image Size - Width and Height <img src="../" alt=".." width="" height=""> -->
+        <p>&lt;img src="../" alt="alternate message" width="" height=""&gt;: image with width and height specified</p>
+        <img src="/images/flower.jpeg" alt="Pic of flower" width="300" height="200">
+
+        <!--Image size using width and Height <img src="../" alt=".." style="width:""; height:" ";>-->
+        <p>&lt;img src="/images/flower.jpeg" alt="Pic of flower" style="width: 150px; height: 200px ;"&gt;: Specifying width and height using Style (prefer this method) </p>
+        <img src="/images/flower.jpeg" alt="Pic of flower" style="width: 150px; height: 200px ;">
+
+        <!--Image from another Server/Site <img src="https://....." alt="">-->
+        <p>&lt;img src="https://...." alt="Picture of Flower"&gt;: Image from Another Server/site </p>
+        <img src="https://assets.weforum.org/editor/lE9tQfFFtf2m6yBTKAdODN7SkzaMRsTGd_IGdSYYZ-s.jpg" alt="Indonasia Bull Racing" style="width:600px; height: 400px;" title="Indonesia Bull Racing" >
+
+        <!--Animted Images (GIFS)-->
+        <p>Animated Images (GIFS)</p>
+        <img src="/images/minions gif.gif" alt="minions">
+        <hr><!---->
+
+
+
+        <!--Image as Link, put <img> tag inside the <a>: <a href="https://..."><img src="../" alt".."></a>-->
+        <h1 style="color: crimson;">Image as Link</h1>
+        <p>Put Img tag inside &lt;a&gt;: </p>
+        <a href="https://www.bbc.com/news/articles/c70r7plrdndo" target="_blank"><img src="/images/Yr25wildlifePic.jpg" alt="wildlife Pictures" title="click to visit bbc wildlife pics of yr 2025" style="width: 600px; height:400px;"></a>
+        <hr><!---->
+
+
+
+        <!--Floating a pic with style="float:right"-->
+        <h1 style="color:yellowgreen">Floating an Image</h1>
+        
+        <p>First: &lt;img src="../" style="float: right"></p>
+        <p>Then para: &lt;p&gt;......&lt;/p&gt;</p>
+        <img src="/images/water.jpg" alt="water img" style="float: right;">
+        <p>Water is a vital, transparent, inorganic chemical (
+) composed of two hydrogen atoms and one oxygen atom. Covering 71% of Earth’s surface, it is essential for life, 
+functioning as a solvent, coolant, and habitat. Key properties include high surface tension, expansion when frozen, and existence in solid, liquid, and gas forms</p>
+        <br>  
+        <div style="clear: both;"></div>
+        <!-- either use this div with clear:both or <br> to break out of the float image overlap-->
+       
+        <p>"float:right"</p>
+        <p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><b>Wasp riding a Broomstick</b></p>
+        <img src="/images/Yr25wildlifePic.jpg" style="float: left;width:100px; height: 80px; margin: 10px ;">
+        <p style="font-size: large;">At first glance, the potter wasp appears to be riding a broomstick.
+But this industrious insect isn't flying back to stir its witch's cauldron, or playing Quidditch. It's carrying a caterpillar prey to feed its young.
+It was captured by macro wildlife photographer Bidyut Kalita and was among the runner-up or 'highly commended' entries in this year's Wildlife Photographer of the Year competition.
+The winning images will be announced on 14 October, followed by an exhibition at the Natural History Museum, showcasing 100 standout photographs from around the world.</p>
+        <div style="clear: both;"></div>
+        <hr><!---->
+
+
+
+        <h1 style="color: deepskyblue;">Caption on media</h1>
+        <p>&lt;figure&gt; &lt;figcaption&gt; : is used to group media(like images, videos, diagrams) with a caption.</p>
+        <!--<figure>: It act as Conatiner for media content. 
+                      Can include image, video, chart, code, code snippets, etc. 
+            <figcaption>: It provides a caption/description for the contents inside<figure>
+                          Can be placed before or afer the content.          -->
+        
+        <img src="/images/Yr25wildlifePic.jpg" alt="wasp" style="width:250px; ">      
+        <!--
+        The reason both img are placed slightly different because:  <img> aligned normally(no margin)
+                                                                        <figure> pushed right due to left margin, Browser automatically apply default css to <figure>
+                                                                        --> 
+        <!--Caption On Bottom of img -->   
+        <p>Caption on Bottom:</p>
+        <figure><img src="/images/Yr25wildlifePic.jpg" alt="wasp" style="width:250px; height:150px"><figcaption>Wasp riding a Broomstick</figcaption></figure>
+        <!--Fix : reset the margin to 0 in <figure>-->
+        <figure style="margin: 0;"><img src="/images/Yr25wildlifePic.jpg" alt="wasp" style="width:250px; height:150px;"><figcaption>Wasp riding a Broomstick</figcaption></figure>
+       
+        <!--caption on Top-->
+        <p>Caption on top:</p>
+        <figure style="margin: 0; text-align: center;"><figcaption>minions</figcaption><img src="/images/minions gif.gif" alt="minions"></figure>
+        <hr><!---->
+
+
+
+        <h1 style="color: slateblue;">Video</h1>
+
+        <!--Video in HTML using : <video src="../" controls></video>-->
+        <!--controls attribute in video tag: Shows play, pause, volume buttons -->
+        <p>Video using: &lt;video src="../" controls&gt;&lt;/video&gt;</p>
+        <video src="/Assests/1397052-hd_1920_1080_30fps.mp4" controls style="width: 400px; height: 380px;" ></video>
+        
+        <!--<source> inside <video> to support multiple formats:-->
+        <!--The <source> element allows you to specify alternative video files which the browser may choose from. The browser will use the first recognized format.-->
+        <p>&lt;source&gt;: inside video tag, to specify alternate videos file, which the browser choose from.</p>    
+        <video controls width="600px">
+            <source src="/Assests/855081-hd_1920_1080_25fps.mp4">
+            <source src="/Assests/133574-757335676_medium.mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!--autoplay attribue: Video plays automatically(often needs muted)-->
+        <p>autoplay attribute: Video starts playing when page loads up(often needs muted). </p>
+        <video src="/Assests/1397052-hd_1920_1080_30fps.mp4" controls width="400px" autoplay muted></video>
+
+        <p>Video with Caption using figure and figcaption</p>
+        <figure><video src="/Assests/855081-hd_1920_1080_25fps.mp4" width="500px" controls></video><figcaption>Squirrel</figcaption></figure>
+        <!--Video Attributes: 
+                  Controls:   Shows play,pause,volume buttons.
+                  autoplay:   Video plays automatically(often needs muted)
+                  loop:       Repeats the video
+                  muted:      Mutes audio
+                  poster:     Image shown befoe video plays
+                  width/height: Set size
+                  preload:    Controls loading(auto,metadata,none).          -->
+        <hr><!---->
+
+
+
+        <h1 style="color: seagreen;">Audio</h1>
+        <!--<audio src="../" controls></audio>-->
+        <!--without controls audio does't appear on page-->
+        <!--Rest everythings same as video, <source> autoplay, loop, muted etc...-->
+        <p>&lt;audio&gt;: for audio, Do use controls with it,rest same as video</p>
+        <audio src="/Assests/sample-12s.mp3" controls></audio>
+        <hr><!---->
+
+
+
+        <h1 style="color: fuchsia;">iframe</h1>
+
+        <h2 style="color: blue;">iframe YouTube Video </h2>
+        <!--iframe plays a youtube video in htmls-->
+        <!--Go to Youtube select any video click on share the click on Embed and copy paste the iframe -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/aQZDyyIyQMA?si=4yEoYL1jFrKCMIVb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <h2>iframe Google map Location</h2>
+        <!-- 1. open Google Maps
+             2. Search for a Location(e.g., a shop, park, home etc)
+             3. Click Share
+             4. Go to Embed a map
+             5. Copy the HTML code
+             6. Paste it into yor webpage -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5702.392098343542!2d86.19593449929836!3d22.809981478644623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f5e3f4985a8239%3A0x6372f895865595c2!2sJubilee%20Amusement%20Park!5e0!3m2!1sen!2sin!4v1774552159060!5m2!1sen!2sin" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+
+    </body>
+</html>
