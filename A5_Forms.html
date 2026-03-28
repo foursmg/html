@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initail-scale=1.0">
+        <title>Forms</title>
+        <link rel="icon" href="/images/favicon-32x32.png">
+    </head>
+    <body>
+        <h1 style="color: yellowgreen; text-align: center;">Forms</h1>
+        <hr><!---->
+
+
+
+        <!-- <form> -->
+        <P>Every element of form goes into &lt;form&gt; &lt;/form&gt; Container.</P>
+        <!-- The <form> element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc. -->
+        <form>
+
+            <!--An <input> element can be displayed in many ways, depending on the type attribute. --><br>
+            <p>&#11044 Text Input: &lt;input type="text"&gt;</p>
+            Name: <input type="text">
+
+            <!--<Label> : The <label> element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focuses on the input element.-->
+            <!--The <label> element also helps users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the <label> element, it toggles the radio button/checkbox.-->
+            <!--The 'for' attribute of the <label> tag should be equal to the 'id' attribute of the <input> element to bind them together.--><br>
+            <p>&#11044 Input with &lt;label for="xyz1"&gt; &lt;/label&gt;, then  &nbsp; &lt;input type="..." id="xyz1"&gt;</p>
+            <label for="fname">First Name: </label>
+            <input type="text" id="fname" name="fname">
+            <label for="lname">Last Name: </label>
+            <input type="text" id="lname" name="lname">
+
+            <!--Radio Button: Radio buttons let a user select ONE of a limited number of choices.-->
+            <p>&#11044 Radio Buttion: &lt;input type="radio" id="xyz1" name="..." value="..." &gt;</p>
+            <p>and then : &lt;label for="xyz1"&gt;...&lt;/label&gt;</p>
+            <p>Drink Preference: </p>
+            <input type="radio" id="coffee"  name="drink" value="coffee">
+            <label for="coffee">Coffee</label>
+            <input type="radio" id="tea" name="drink" value="tea">
+            <label for="tea">tea</label>
+            <input type="radio" id="juice" name="drink" value="juice">
+            <label for="juice">Juice</label>
+            <input type="radio" id="water" name="drink" value="water">
+            <label for="water">Water</label>
+
+            <!--<Checkbox>: The <input type="checkbox"> defines a checkbox. -->
+            <!--Checkboxes let a user select ZERO or MORE options of a limited number of choices, radio only oneof the options.-->    
+            <p>&#11044 CheckBox: Pretty Similar to radio, type="checkbox"</p>
+            <input type="checkbox" name="travel" value="bus" id="bus">
+            <label for="bus">Bus</label>
+            <input type="checkbox" id="flight" name="travel" value="flight">
+            <label for="flight">Flight</label>
+            <input type="checkbox" id="train" name="travel" value="train">
+            <label for="train">Train</label>
+
+            <p>&#11044 &lt;select&gt; element defines a drop-down list </p>
+            <p>&lt;label&gt;&lt;/label&gt;<br>&lt;select id="xyz1" name="..."&gt;<br>&nbsp;&lt;option value="abc"&gt; abc &lt;/option&gt;<br>&lt;/select&gt;  </p>
+            <label for="cars">Choose a car: </label>
+            <select id="cars" name="cars" >
+                <option value="honda">Honda</option>
+                <option value="kia">Kia</option>
+                <option value="volvo">Volvo</option>
+                <option value="toyota">Toyota</option>
+            </select><br>
+            <!--By default, the first item in the drop-down list is selected.-->
+            
+            <p>To define a pre-selected option, add the <b>selected</b> attribue to the <b>option</b></p>
+            <label for="bike">Bike Brands: </label>
+            <select id="bike" name="bike">
+                <option value="yamaha">Yamaha</option>
+                <option value="Yezdi">Yezdi</option>
+                <option value="Suzuki">Suzuki</option>
+                <option value="Triumph" selected>Triumph</option>
+            </select>
+            <!--size attribute in select specify he numbers of visible values.-->
+
+            <p><b>Multiple Selection: </b>Selecting multiple options from dropdown menu using <b>multiple</b> attribute in select</p>
+            <p>Hold down ctrl/command button to select multiple options</p>
+
+            <!-- <datalist> -->
+            <p>&#11044 &lt;datalist&gt;</p>
+            <form action="">
+                <p>Select a Browser: </p>
+            <input list="browsers">
+            <datalist id="browsers">
+                <option value="Edge">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+            <input type="submit">
+            </form>
+
+
+            <!-- <textarea> -->
+            <p>&#11044 The &lt;textarea&gt; element defines a multi-line input field(a text area)</p>
+            <p>&lt;textarea name="..." rows="xx" cols="xx"&gt; &lt;/textarea&gt; </p>
+            <textarea name="feedback" rows="10" cols="30"></textarea>
+
+             <!--The <input type="submit"> defines a button for submitting the form data to a form-handler.-->
+            <!--The form-handler is typically a file on the server with a script for processing input data.-->
+            <!--The form-handler is specified in the form's action attribute.-->
+            <p>&#11044 Submit Button using input type="submit" and value="Submit"</p>
+            <input type="submit" value="Submit">
+
+            <!--<button>-->
+            <p>&#11044 <b>button </b>: defines a clickable button, and<b> alert</b></p>
+            <p>&lt;button type="button" onclick="alert('Hello')"&gt;...&lt;/button></p>
+            <button type="button" onclick="alert('Hello!!!')">Click here!</button>    
+            
+            
+            <!--id(unique Identifer): Used to uniquely identify an element.
+                                      Must be unique in the whole page
+                                      Often used for CSS styling or JavaScript-->
+            <!--for(label connection): Used inside <label>
+                                       Connection label with an input using the input's id-->
+            <!--name(Form-related identifier): Mainly used in forms
+                                               Used to send data to server
+                                               Not required to be unique -->
+            <!--value : The value attribute is used inside form elements(like <input>,<Button>,<ption>) to
+                        define the data or default value. 
+                     **: In <input>(important)
+                         <input type="text" name="username" value="john">
+                         here Default text shown = john,
+                         if user sub,its without changing- username= john
+                       : In <button>
+                         <input type="button" value="Login">
+                         The text on button login
+                       : in <option> (dropdown)
+                         <select name="city">
+                            <option value="ranchi">Ranchi</option>
+                            <option value="delhi">Delhi</option> 
+                         </select>
+                         
+                      **:name= key
+                         value= data   -->
+        <hr><!---->
+
+
+
+        <!--Different Inputs-->
+        <h1 style="color: mediumaquamarine;">Different Input Types</h1>
+        
+        <!--Text-->
+        <p>&#11044 input Type text</p>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+
+        <!--Password -->
+        <p>&#11044 input type Password</p>
+        <label for="pass">Password: </label>
+        <input type="password" id="pass" name="password">
+        
+        <!--Color-->
+        <p>&#11044 input type Colour</p>
+        <label for="color">Favorite colour: </label>
+        <input type="color" name="color" id="color">
+
+        <!--Date-->
+        <p>&#11044 input type Date</p>
+        <label for="appointment Date">Select the date of appointment: </label>
+        <input type="date" id="appointment Date" name="date">
+
+         <p>&#11044 input type Date with min and max attribute</p>
+        <label for="appointment Date">Enter a date after 2000-01-02 : </label>
+        <input type="date" id="appointment Date" name="date" min="2000-01-02">
+
+        <!--Email-->
+        <p>&#11044 input type Date</p>
+        <label for="email">Enter your Email: </label>
+        <input type="email" id="email" name="email">
+
+        <!--Image input-->
+        <p>&#11044 input type Image</p>
+        <input type="image" src="/images/flower.jpeg" alt="Submit" width="100"> 
+
+        <!--File-->
+        <p>&#11044 input type File</p>
+        <label for="myfile">Select a file: </label>
+        <input type="file" id="myfile" name="myfile">
+
+        <!--Input type Hidden-->
+        <p>&#11044 input type Hidden</p>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <input type="hidden" id="custId" name="custId" value="3487">
+        <input type="submit" value="Submit">        
+        
+        <!--Input type Month-->
+        <p>&#11044 input type Hidden</p>
+        <label for="bdaymonth">Birthday (month and year):</label>
+        <input type="month" id="bdaymonth" name="bdaymonth">
+
+        <!-- Input Type Number -->
+        <p>&#11044 input type Number</p>
+        <label for="quantity">Quantity (between 1 and 5):</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="5">
+
+        <!--Input type range-->
+        <p>&#11044 input type Range</p>
+        <label for="vol">Volume (between 0 and 50):</label>
+        <input type="range" id="vol" name="vol" min="0" max="50">
+
+        <!--Input type Tel-->
+        <p>&#11044 input type Tel</p>
+        <label for="phone">Enter your phone number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+
+        <!--Input type Time-->
+        <p>&#11044 input type Time</p>
+        <label for="appt">Select a time:</label>
+        <input type="time" id="appt" name="appt">
+
+
+        <hr><!---->
+
+
+
+
+        <h1 style="color: crimson;">Action Attribute</h1>
+        <!--The action attribute defines the action to be performed when the form is submitted.-->
+        <!--Usually, the form data is sent to a file on the server when the user clicks on the submit button.-->
+        <!--In the example below, the form data is sent to a file called "action_page.php". This file contains a server-side script that handles the form data:-->
+        <p>&#11044 Action attribute: defines the action to be performed when the form is submitted. </p>
+        <p>&lt;form action="../"&gt; &lt;/form&gt;</p>
+        <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname">
+            <input type="submit" value="Submit">
+        </form>
+
+        <!--The target attribute specifies where to display the response that is received after submitting the form.-->
+        <p>&#11044 Target attribute </p>
+        <p>target attribute with _self value:  </p>
+        <P>&lt;form action="../" target="_self"&gt;</P>
+        <form action="../" target="_blank">
+            Name: <input type="text" name="name">
+            <input type="submit" value="Submit">
+        </form>
+        <!--The default value is _self which means that the response will open in the current window.-->
+        <hr><!---->
+
+
+
+        <h1 style="color: forestgreen;">Method Attribute</h1>
+        
+        <!--The method attribute specifies the HTTP method to be used when submitting the form data.-->
+        <!--The form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with method="post").-->
+        <!--The default HTTP method when submitting form data is GET. -->
+        <p>&lt;form action="/action_page.php" method="get"&gt;&lt;/form&gt;</p>
+        
+        <form action="/action_page.php" method="get"></form>
+        <form action="/action_page.php" method="post"></form>
+        
+        <p><b>Notes on GET:</b></p>
+        <p>Appends the form data to the URL, in name/value pairs</p>
+        <p>NEVER use GET to send sensitive data! (the submitted form data is visible in the URL!)</p>
+        <p>The length of a URL is limited (2048 characters)</p>
+        <p>Useful for form submissions where a user wants to bookmark the result</p>
+        <p>GET is good for non-secure data, like query strings in Google</p>
+
+        <p><b>Notes on POST:</b></p>
+        <p>Appends the form data inside the body of the HTTP request (the submitted form data is not shown in the URL)</p>
+        <p>POST has no size limitations, and can be used to send large amounts of data.</p>
+        <p>Form submissions with POST cannot be bookmarked</p>
+        <p> Always use POST if the form data contains sensitive or personal information!</p>
+        <hr><!---->
+
+        
+
+        <h1 style="color: darkslateblue;">Autocomplete Atribute</h1>
+        <p>The autocomplete attribute specifies whether a form should have autocomplete on or off.</p>
+        <p>When autocomplete is on, the browser automatically complete values based on values that the user has entered before.</p>
+        <p>&lt;form action="../" target="_blank" method="post" autocomplete="on"&gt;&lt;/form&gt;</p>
+        <form action="../" target="_blank" method="post" autocomplete="on"></form>
+        </form>    
+        <hr><!---->
+
+
+
+        <!--<fieldset> and <legend>-->
+        <h1 style="color: mediumvioletred;"> &lt;fieldset&gt; and &lt;legend&gt;</h1>    
+        <p>The &lt;fieldset&gt; element is used to group related data in a form.</p>
+        <p>The &lt;legend&gt; element defines a caption for the &lt;fieldset&gt; element.</p>
+
+        <fieldset>
+            <legend>Candidate Name</legend>
+        <label for="fname">First Name: </label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">last Name: </label><br>
+        <input type="text" id="lname" name="lname">
+        </fieldset>
+
+
+        </body>
+</html>
+    
