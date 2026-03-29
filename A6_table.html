@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Table</title>
+        <link rel="icon" href="/images/favicon-32x32.png">
+        <style>
+            table,th,td{
+                border: 2px solid black;
+                border-collapse: collapse;
+            }
+            th,td{
+                background-color: #96D4D4;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="color: chartreuse; text-align: center;">Table</h1>
+        <hr>
+
+        <p>&#11044 A Simple HTML Table</p>
+        <p>&lt;table&gt; &lt;tr&gt; &lt;td&gt;</p>
+        <table>
+            <tr>
+                <td>Comapy</td>
+                <td>Contract</td>
+                <td>Country</td>
+            </tr>
+            <tr>
+            <td>John</td>
+            <td>+12345</td>
+            <td>Germany</td>
+            </tr>
+            <tr>
+                <td>Ronny</td>
+                <td>+54321</td>
+                <td>Pakistan</td>
+            </tr>
+            <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+        </table>
+        <!-- td stands for table data. -->
+        <!-- A table cell can contain all sorts of HTML elements: text, images, lists, links, other tables, etc.-->
+        <!-- tr stands for table row.-->
+
+        <!--Sometimes you want your cells to be table header cells. In those cases use the <th> tag instead of the <td> tag:
+            th stands for table header.-->
+        <p>&#11044 Table with header </p>
+        <p>&lt;th&gt; instead of &lt;td&gt;</p>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+             <tr>
+                <td>Ronny</td>
+                <td>+54321</td>
+                <td>Pakistan</td>
+            </tr>
+            <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+        </table>
+
+        <p>&#11044 Border in table:To add a border, use the CSS border property on table, th, and td elements: </p>
+        <p> table,th,td{<br>
+                  border: 2px solid black;<br>
+            }</p>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+             <tr>
+                <td>Ronny</td>
+                <td>+54321</td>
+                <td>Pakistan</td>
+            </tr>
+            <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+        </table>
+
+        <p>&#11044 collapsed Table Border</p>
+        <p>border-collapse:collapse; in table,th,td</p>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+             <tr>
+                <td>Ronny</td>
+                <td>+54321</td>
+                <td>Pakistan</td>
+            </tr>
+            <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+        </table>
+
+        <p>&#11044 Style Table Borders</p>
+         th,td{<br>
+                background-color: #96D4D4;<br>
+            }
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+             <tr>
+                <td>Ronny</td>
+                <td>+54321</td>
+                <td>Pakistan</td>
+            </tr>
+            <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+        </table>
+
+        <p>&#11044 HTML Table Width:dd the style attribute to the &lt;table&gt; element. </p>
+        <p>table style="width:100%"</p>
+        <table style="width:100%">
+            <tr>
+                <th>Name</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+             <tr>
+                <td>Ronny</td>
+                <td>+54321</td>
+                <td>Pakistan</td>
+            </tr>
+            <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+        </table>
+
+        <p>&#11044 HTML Table Column Width: To set the size of a specific column, add the style attribute on a &lt;th&gt; or &lt;td&gt; element:</p>
+        <p>th style="width:70%"</p>
+         <table>
+            <tr>
+                <th  style="width:100%">Name</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+             <tr>
+                <td>Ronny</td>
+                <td>+54321</td>
+                <td>Pakistan</td>
+            </tr>
+            <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+        </table>
+
+         <p>&#11044 HTML Table Row height: To set the size of a specific column, add the style attribute on a &lt;tr&gt; element of thw row:</p>
+        <p>th style="height:200%"</p>
+         <table>
+            <tr>
+                <th >Name</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+             <tr style="height:200px;">
+                <td>Ronny</td>
+                <td>+54321</td>
+                <td>Pakistan</td>
+            </tr>
+            <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+        </table>
+
+        <p>&#11044 Vertical table header: To use the column as table headers, define the first cell in each row a &lt;th&gt; element</p>
+    <table>
+            <tr>
+                <th >Name</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+             <tr>
+                <th>Ronny</td>
+                <td>+54321</td>
+                <td>Pakistan</td>
+            </tr>
+            <tr>
+                <th>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+        </table>
+
+        <p>&#11044 Table Caption:add the &lt;caption&gt; &lt;/caption&gt; right after the table tag and before the first table elements </p> 
+        <table>
+             <caption>Monthly Savings</caption>   
+            <tr>
+                <th >Name</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+             <tr>
+                <th>Ronny</td>
+                <td>+54321</td>
+                <td>Pakistan</td>
+            </tr>
+            <tr>
+                <th>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+        </table>
+
+        <h1>Table Colspan</h1>
+
+        <p>To make a cell span over multiple colums, use the colspan</p>
+        <table>
+             <caption>Monthly Savings</caption>   
+            <tr>
+                <th colspan="2">Name</th>
+                <th>Contact</th>
+                
+            </tr>
+             <tr>
+                <th>Ronny</td>
+                <td>+54321</td>
+                <td>Pakistan</td>
+            </tr>
+            <tr>
+                <th>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+        </table>
+
+
+        <p><b>rowspan</b></p>
+        <table>
+             <caption>Monthly Savings</caption>   
+            <tr>
+                <th rowspan="2">Name</th>
+                <th >Contact</th>
+                <th >Country</th>
+            </tr>
+             <tr>
+                <th >Ronny</td>
+                 <td>+54321</td>
+                <td>Pakistan</td>
+            </tr>
+            <tr>
+               <th>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+        </table>
+
+
+
+    </body>
+</html>
